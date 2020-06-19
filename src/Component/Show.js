@@ -14,16 +14,16 @@ const Body = ({showFetch, eventFirst, eventSecond}) => {
             </div>
         ) : 
         (   <div>
-                <p>Mode Name: {eventFirst}</p>
-                <p>Line :{eventSecond}</p>
+                <h3>Mode Name: {eventFirst}</h3>
+                <h3>Line :{eventSecond}</h3>
             <div className="row">
                 <div className="blue">
-                    <p>Start of the line :</p>
+                    <h3>Start of the line :</h3>
                     <br />
                     <div> {showFetch.routeSections[0].originationName}</div>
                 </div>
                 <div className="blue">
-                    <p>End of the line:</p>
+                    <h3>End of the line:</h3>
                     <br />
                     <div>{showFetch.routeSections[0].destinationName}</div>
                 </div>

@@ -49,11 +49,12 @@
   color: white;
   font-size: large;
   width: 350px;
-  height: 150px;
+  height: 160px;
   border: 1px solid #dad3d3;
   margin-left: 15%;
   align-content: center;
   justify-content: center;
+  border-radius: 9px;
 }
 .App-link {
   color: #61dafb;

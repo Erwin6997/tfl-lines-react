@@ -2,7 +2,7 @@ import React from 'react';
 const FirsT = (props) => {
     
     return(
-        <div className="select-mode">
+        <div className="select">
             <select defaultValue="default" 
                 onChange={(event) =>{props.handleSelectValue(event)}}>
                 <option value="default" disabled>

@@ -3,7 +3,7 @@ const SecondT = ({modeName, handleSelect}) => {
     console.log(modeName.id)
     console.log("props")
     return(
-        <div className="select-mode">
+        <div className="select">
             {modeName.length === 0 ? (
         ""
         ) : (

@@ -20,12 +20,12 @@ const Body = ({showFetch, eventFirst, eventSecond}) => {
                 <div className="blue">
                     <h3>Start of the line :</h3>
                     <br />
-                    <div> {showFetch.routeSections[0].originationName}</div>
+                    <h3> {showFetch.routeSections[0].originationName}</h3>
                 </div>
                 <div className="blue">
                     <h3>End of the line:</h3>
                     <br />
-                    <div>{showFetch.routeSections[0].destinationName}</div>
+                    <h3>{showFetch.routeSections[0].destinationName}</h3>
                 </div>
             </div>
             </div>

@@ -4,6 +4,7 @@ import Show from './Component/Show';
 import FirstT from './Component/FirstT';
 import SecondT from './Component/SecondT';
 import './App.css';
+import Footer from './Component/Footer';
 
 function App() {
   const [err, setErr] = useState(false);
@@ -62,6 +63,7 @@ function App() {
       <SecondT modeName={modeName} handleSelect={handleSelect}/>
       <br />
       <Show showFetch={showFetch} eventFirst={eventFirst} eventSecond={eventSecond}/>
+      <Footer />
     </div>
   );
 }

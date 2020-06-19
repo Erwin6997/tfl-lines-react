@@ -39,6 +39,11 @@
   flex-wrap: wrap;
   grid-gap: 2cm;
 }
+.logo-img{
+  margin-left: 115%;
+  width: 2cm;
+  height: 4cm;
+}
 .blue{
   background-color: #0e3c97;
   color: white;
@@ -46,7 +51,7 @@
   width: 350px;
   height: 150px;
   border: 1px solid #dad3d3;
-  margin-left: 17%;
+  margin-left: 15%;
   align-content: center;
   justify-content: center;
 }

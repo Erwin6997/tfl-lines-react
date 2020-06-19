@@ -22,6 +22,9 @@ const Body = ({showFetch, eventFirst, eventSecond}) => {
                     <br />
                     <h3> {showFetch.routeSections[0].originationName}</h3>
                 </div>
+                <div>
+                    <img alt="image" className="logo-img" src="https://imageog.flaticon.com/icons/png/512/25/25426.png?size=1200x630f&pad=10,10,10,10&ext=png&bg=FFFFFFFF" ></img>
+                </div>
                 <div className="blue">
                     <h3>End of the line:</h3>
                     <br />

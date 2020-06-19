@@ -7,12 +7,13 @@ import './App.css';
 
 function App() {
   const [err, setErr] = useState(false);
-  const [transport, setTransport] = useState();
+  const [transport, setTransport] = useState("");
   const [modeName ,setModeName] = useState("");
-  const [showFetch , setShowFetch] = useState()
-  const [eventFirst, setEventFirst] = useState();
-  const [eventSecond, setEventSecond] = useState();
-
+  const [showFetch , setShowFetch] = useState("")
+  const [eventFirst, setEventFirst] = useState("");
+  const [eventSecond, setEventSecond] = useState("");
+  console.log(showFetch);
+  console.log("kharrrrrrrr")
   const url = "https://api.tfl.gov.uk/Line/Mode/*";
   const nurl ="https://api.tfl.gov.uk/Line/*/Route"
 
@@ -21,7 +22,7 @@ function App() {
   .then(res => res.json())
   .then(data => setTransport(data))
   .catch((err) => setErr(err));
-  }, []);
+  }, [transport]);
   if (!transport) {
     return <img alt="loading" src="https://i.gifer.com/HJkK.gif" />
   }
@@ -33,7 +34,6 @@ function App() {
     fetch(newUrl)
     .then(res => res.json())
     .then(data => {
-      console.log(data);
       setModeName(data);
     });
   };
@@ -47,10 +47,11 @@ function App() {
     .then(res => res.json())
     .then(data => {
       console.log(data);
+      console.log("data");
       setShowFetch(data);
     });
-    console.log(showLine)
-    console.log("secound line ")
+    console.log(showFetch)
+    console.log("showFetch line ")
   }
 
   return (

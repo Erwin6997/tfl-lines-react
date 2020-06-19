@@ -1,6 +1,6 @@
 import React from 'react';
 const SecondT = ({modeName, handleSelect}) => {
-    console.log(modeName.id)
+    console.log(modeName)
     console.log("props")
     return(
         <div className="select">
